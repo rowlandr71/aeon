@@ -1,0 +1,104 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert-status",
+        "sep-1",
+        "section-setup",
+        "sep-2",
+        "status-footer"
+      ]
+    },
+    "alert-status": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 WATCH — fleet first activation",
+        "type": "warning"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-setup": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-setup",
+        "text-setup-part1",
+        "text-setup-part2"
+      ]
+    },
+    "heading-setup": {
+      "type": "Heading",
+      "props": {
+        "text": "SETUP",
+        "level": "h3"
+      }
+    },
+    "text-setup-part1": {
+      "type": "Text",
+      "props": {
+        "text": "heartbeat has no scheduled run history (no entry in cron-state.json). This is the first heartbeat run — all future runs will be dispatched by the scheduler at 08:00 / 14:00 / 20:00 UTC.",
+        "variant": "body"
+      }
+    },
+    "text-setup-part2": {
+      "type": "Text",
+      "props": {
+        "text": "All other signals clean: no failed/stuck skills, no open PRs, no urgent issues, no open issues.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-status-page",
+        "link-status",
+        "text-updated"
+      ]
+    },
+    "text-status-page": {
+      "type": "Text",
+      "props": {
+        "text": "STATUS_PAGE=WATCH ·",
+        "variant": "caption"
+      }
+    },
+    "link-status": {
+      "type": "Link",
+      "props": {
+        "label": "docs/status.md",
+        "href": "docs/status.md"
+      }
+    },
+    "text-updated": {
+      "type": "Text",
+      "props": {
+        "text": "updated.",
+        "variant": "caption"
+      }
+    }
+  }
+}
