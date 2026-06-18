@@ -460,7 +460,7 @@ model: claude-sonnet-4-6
 # + secret ANTHROPIC_API_KEY. Example: https://api.deepseek.com/anthropic
 # Bankr docs: https://docs.bankr.bot/llm-gateway/overview
 gateway:
-  provider: auto
+  provider: claude
 
 # Output channels
 channels:
