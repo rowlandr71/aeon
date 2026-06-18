@@ -1,0 +1,473 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "HN Digest — 2026-06-18",
+        "description": "Heavy AI day — 3 of 7 cover AI reception, geopolitical friction, or medical ambition; a Git challenger and collapsing US science round it out."
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_1",
+        "sep_1",
+        "story_2",
+        "sep_2",
+        "story_3",
+        "sep_3",
+        "story_4",
+        "sep_4",
+        "story_5",
+        "sep_5",
+        "story_6",
+        "sep_6",
+        "story_7"
+      ]
+    },
+    "story_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_1_badge",
+        "story_1_link",
+        "story_1_score",
+        "story_1_why",
+        "story_1_quote",
+        "story_1_discuss"
+      ]
+    },
+    "story_1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "AI & agents"
+      }
+    },
+    "story_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Midjourney Enters Medical Imaging",
+        "href": "https://www.midjourney.com/medical/blogpost",
+        "source": "Midjourney"
+      }
+    },
+    "story_1_score": {
+      "type": "Text",
+      "props": {
+        "text": "1,139 pts · 771 comments",
+        "variant": "caption"
+      }
+    },
+    "story_1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Midjourney announces a medical imaging product, pushing AI-generated visuals into clinical diagnostics.",
+        "variant": "body"
+      }
+    },
+    "story_1_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Japan's entire healthcare system is built around preventative testing for asymptomatic conditions — you've swallowed a health insurance industry black pill.\" — nihonde",
+        "variant": "lead"
+      }
+    },
+    "story_1_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48579650"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_2_badge",
+        "story_2_link",
+        "story_2_score",
+        "story_2_why",
+        "story_2_quote",
+        "story_2_discuss"
+      ]
+    },
+    "story_2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Security & policy"
+      }
+    },
+    "story_2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "U.S. Science Is in Chaos",
+        "href": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
+        "source": "Scientific American"
+      }
+    },
+    "story_2_score": {
+      "type": "Text",
+      "props": {
+        "text": "854 pts · 1,043 comments",
+        "variant": "caption"
+      }
+    },
+    "story_2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: The compact between US government and research institutions has fractured, threatening the science-to-innovation pipeline.",
+        "variant": "body"
+      }
+    },
+    "story_2_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"The IPCC has concrete claims and survey papers; the other side offers vague accusations that feel LLM-generated, stuck at gate #1.\" — smallmancontrov",
+        "variant": "lead"
+      }
+    },
+    "story_2_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48568058"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_3_badge",
+        "story_3_link",
+        "story_3_score",
+        "story_3_why",
+        "story_3_quote",
+        "story_3_discuss"
+      ]
+    },
+    "story_3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Infra & devtools"
+      }
+    },
+    "story_3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Lore — Open Source VCS for Scalability",
+        "href": "https://lore.org/",
+        "source": "Lore"
+      }
+    },
+    "story_3_score": {
+      "type": "Text",
+      "props": {
+        "text": "1,205 pts · 646 comments",
+        "variant": "caption"
+      }
+    },
+    "story_3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: A new VCS challenges Git's core assumptions: large repos, binary assets, non-programmer contributors.",
+        "variant": "body"
+      }
+    },
+    "story_3_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Git is a tool by programmers for programmers. You don't need to convince me why Git isn't suitable for artists.\" — js2",
+        "variant": "lead"
+      }
+    },
+    "story_3_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48571081"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_4_badge",
+        "story_4_link",
+        "story_4_score",
+        "story_4_why",
+        "story_4_quote",
+        "story_4_discuss"
+      ]
+    },
+    "story_4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "AI & agents"
+      }
+    },
+    "story_4_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "60% of US Consumers Say \"AI\" in Branding Is a Turnoff",
+        "href": "https://wpvip.com/future-of-the-web-2026/",
+        "source": "WP VIP"
+      }
+    },
+    "story_4_score": {
+      "type": "Text",
+      "props": {
+        "text": "1,057 pts · 565 comments",
+        "variant": "caption"
+      }
+    },
+    "story_4_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: A WP VIP study finds the majority of US consumers distrust AI branding — industry messaging and public sentiment are diverging fast.",
+        "variant": "body"
+      }
+    },
+    "story_4_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"xAI built an unpermitted power plant to power Grok — no permits, no environmental study. State's response: strip the EPA of pollution oversight.\" — jmyeet",
+        "variant": "lead"
+      }
+    },
+    "story_4_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48569278"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_5_badge",
+        "story_5_link",
+        "story_5_score",
+        "story_5_why",
+        "story_5_quote",
+        "story_5_discuss"
+      ]
+    },
+    "story_5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Security & policy"
+      }
+    },
+    "story_5_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GrapheneOS Ported to Android 17",
+        "href": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
+        "source": "GrapheneOS"
+      }
+    },
+    "story_5_score": {
+      "type": "Text",
+      "props": {
+        "text": "999 pts · 588 comments",
+        "variant": "caption"
+      }
+    },
+    "story_5_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: The hardened Android fork lands Android 17, keeping privacy-focused users ahead of AOSP's security cycle.",
+        "variant": "body"
+      }
+    },
+    "story_5_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"GrapheneOS will eventually have a native RCS app; for now it's fully supported via Google Messages and sandboxed Play.\" — strcat",
+        "variant": "lead"
+      }
+    },
+    "story_5_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48561654"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_6_badge",
+        "story_6_link",
+        "story_6_score",
+        "story_6_why",
+        "story_6_quote",
+        "story_6_discuss"
+      ]
+    },
+    "story_6_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "AI & agents"
+      }
+    },
+    "story_6_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "US Holds Off Blacklisting DeepSeek; 100+ Firms Flagged",
+        "href": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+        "source": "Reuters"
+      }
+    },
+    "story_6_score": {
+      "type": "Text",
+      "props": {
+        "text": "509 pts · 562 comments",
+        "variant": "caption"
+      }
+    },
+    "story_6_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: The US holds off blacklisting DeepSeek while expanding its security-risk list to 100+ Chinese firms — the decoupling is getting surgical.",
+        "variant": "body"
+      }
+    },
+    "story_6_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Protectionism is core to industrial policy — every powerhouse uses it. China's dominance is built on exactly this.\" — CPLX",
+        "variant": "lead"
+      }
+    },
+    "story_6_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48565498"
+      }
+    },
+    "sep_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_7": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_7_badge",
+        "story_7_link",
+        "story_7_score",
+        "story_7_why",
+        "story_7_quote",
+        "story_7_discuss"
+      ]
+    },
+    "story_7_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Infra & devtools"
+      }
+    },
+    "story_7_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "New Outlook Takes 10s to Do What Classic Does Instantly",
+        "href": "https://www.windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows/",
+        "source": "Windows Latest"
+      }
+    },
+    "story_7_score": {
+      "type": "Text",
+      "props": {
+        "text": "305 pts · 219 comments",
+        "variant": "caption"
+      }
+    },
+    "story_7_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: A documented regression in the new Outlook shows the real cost of Electron/web rewrites in enterprise software.",
+        "variant": "body"
+      }
+    },
+    "story_7_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Replace 'algorithm' with 'corporate processes' and 'cores' with 'employees'… eliminating QA around 2014–15 created the structural conflicts that drive this.\" — ryandvm",
+        "variant": "lead"
+      }
+    },
+    "story_7_discuss": {
+      "type": "Link",
+      "props": {
+        "label": "Discussion on HN",
+        "href": "https://news.ycombinator.com/item?id=48584207"
+      }
+    }
+  }
+}

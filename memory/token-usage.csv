@@ -1,2 +1,3 @@
 date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-18,config-validator,claude-sonnet-4-6,9,2727,237152,14881
+2026-06-18,hn-digest,claude-sonnet-4-6,48,27386,2383388,48133

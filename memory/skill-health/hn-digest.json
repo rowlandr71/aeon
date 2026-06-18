@@ -1,0 +1,14 @@
+{
+  "skill": "hn-digest",
+  "last_analyzed": "2026-06-18T16:42:55Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured digest with 7 themed stories, proper logging, dedup cache, and clear methodology—good execution despite truncated output preview.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-06-18",
+      "score": 4
+    }
+  ]
+}
