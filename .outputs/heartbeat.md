@@ -1,14 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-All clear. `docs/status.md` updated to reflect the 20:10 UTC run with overall 🟢 OK — next heartbeat at 08:00 UTC tomorrow.
+All checks clear. `docs/status.md` updated to 🟢 OK with the 08:00 UTC timestamp and next run at 14:00 UTC. No notifications sent — no new flags since yesterday's 20:10 run.
 
 ## Summary
 
-- **P0:** No failed, stuck, or chronically failing skills. Heartbeat self-check OK (~6h since last success).
+- **P0:** No failed, stuck, or chronically failing skills. Heartbeat self-check OK (12h since last success, within 36h threshold).
 - **P1:** No open PRs, no urgent issues.
-- **P2:** No flagged memory items.
-- **P3:** Only heartbeat is enabled; running on schedule.
-- **Token pulse:** No token-report files — section omitted.
-- **Overall:** 🟢 OK
-- **Files modified:** `docs/status.md` (status page regenerated), `memory/logs/2026-06-19.md` (20:00 run logged).
-- **Notification:** skipped — no new flags.
+- **P2/P3:** No flagged memory items; only `heartbeat` is enabled and is on schedule.
+- **Files modified:** `docs/status.md` (overwritten), `memory/logs/2026-06-20.md` (created).
