@@ -1,11 +1,12 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
+All checks clear. `docs/status.md` updated with the 08:00 UTC timestamp and latest heartbeat run data; log entry written to `memory/logs/2026-06-22.md`. No notifications sent — no new flags.
+
 ## Summary
 
-- **P0:** No failed/stuck skills. Heartbeat self-check OK (last success ~5h ago at 14:53 UTC). config-validator (25%, 4 runs) and hn-digest (50%, 2 runs) below chronic threshold of 5 runs — not flagged.
+- **P0:** No failed, stuck, or chronically-failing skills. Heartbeat last succeeded ~12h ago (well within 36h self-check threshold).
 - **P1:** No open PRs, no urgent issues.
 - **P2:** No flagged memory items.
-- **P3:** Only heartbeat enabled; last success well within 2× schedule interval.
-- **Token pulse:** No token-report files — section omitted.
-- **Overall:** 🟢 OK — no notification sent.
-- **Files updated:** `docs/status.md`, `memory/logs/2026-06-21.md`.
+- **P3:** Only `heartbeat` is enabled; last success within 2× its 8h interval.
+- **Status page:** `docs/status.md` updated — 🟢 OK, next run 14:00 UTC.
+- **Log:** `memory/logs/2026-06-22.md` created.
