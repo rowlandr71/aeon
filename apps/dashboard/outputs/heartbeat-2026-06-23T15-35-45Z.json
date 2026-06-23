@@ -1,0 +1,23 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "FAILED",
+        "message": "Failed 2026-06-23 14:28 UTC | Consecutive failures: 1"
+      }
+    }
+  }
+}
