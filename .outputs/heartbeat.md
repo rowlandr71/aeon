@@ -1,9 +1,10 @@
-All done. HEARTBEAT_OK · STATUS_PAGE=OK
+HEARTBEAT_OK · STATUS_PAGE=OK
 
 ## Summary
 
-- **P0–P3:** All clear. No failed/stuck/degraded skills, no stalled PRs, no urgent issues, no flagged memory items.
-- **Heartbeat self-check:** Last success at 15:35 UTC today (~4.5h ago), well within the 36h threshold. Recovered from the earlier 14:28 UTC failure that was already notified.
-- **Notification:** Skipped — no new flags; prior failure already covered.
-- **`docs/status.md`:** Updated to 🟢 OK, next run 2026-06-24 08:00 UTC.
-- **`memory/logs/2026-06-23.md`:** Log entry appended.
+All checks clear — no notifications sent.
+
+- **P0:** No failed/stuck/degraded skills. Heartbeat self-check OK (last success ~11.5h ago, well under 36h limit). `config-validator` and `hn-digest` both below the 5-run threshold for chronic-failure flagging.
+- **P1–P3:** No stalled PRs, no urgent issues, no flagged memory items, heartbeat on schedule.
+- **docs/status.md** — regenerated (🟢 OK, updated 2026-06-24 08:00 UTC, next run 14:00 UTC).
+- **memory/logs/2026-06-24.md** — created with this run's entry.
