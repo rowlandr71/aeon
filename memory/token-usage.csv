@@ -21,3 +21,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-24,heartbeat,claude-sonnet-4-6,10,4312,360984,31620
 2026-06-24,heartbeat,claude-sonnet-4-6,10,3598,355788,30232
 2026-06-24,heartbeat,claude-sonnet-4-6,12,4983,455896,32058
+2026-06-25,heartbeat,claude-sonnet-4-6,10,4157,359657,31384
