@@ -1,12 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-## Summary
-
-- **P0:** Clean — no failed, stuck, or chronically failing skills. Heartbeat self-check OK (last success ~6h ago).
+All checks clean:
+- **P0:** No failed, stuck, or chronically failing skills. Heartbeat self-check OK (last success ~11.5h ago, well under 36h).
 - **P1:** No open PRs, no urgent issues.
 - **P2:** No flagged memory items.
-- **P3:** Only heartbeat is enabled; running on schedule.
-- **Token pulse:** No token-report files — section omitted from status page.
-- **Overall:** 🟢 OK — no notification sent.
-- `docs/status.md` regenerated (next run: 2026-06-28 08:00 UTC).
-- Log entry appended to `memory/logs/2026-06-27.md`.
+- **P3:** Only `heartbeat` is enabled; last success within its 12h threshold.
+- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
+
+`docs/status.md` updated (🟢 OK, next run 14:00 UTC). No notification sent — nothing new to flag.
