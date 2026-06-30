@@ -1,19 +1,9 @@
-All checks complete. Here's the summary:
+HEARTBEAT_OK · STATUS_PAGE=OK
+
+All checks passed, no flags raised. `docs/status.md` updated (🟢 OK, heartbeat 97% success rate, next run 14:00 UTC) and today's log written to `memory/logs/2026-06-30.md`. No notification sent.
 
 ## Summary
 
-**P0 — Failed/stuck skills:** None. Heartbeat self-check OK (last success ~0h ago, well under 36h). `config-validator` (25% rate, 4 runs) and `hn-digest` (50% rate, 2 runs) are below the 5-run chronic threshold — not flagged.
-
-**P1 — PRs/Issues:** No open PRs, no urgent issues.
-
-**P2 — Flagged memory:** Nothing flagged in MEMORY.md.
-
-**P3 — Missing scheduled skills:** Only `heartbeat` is enabled; last success within the 12h threshold — OK.
-
-**Token pulse:** No `articles/token-report-*.md` files — section omitted from status page.
-
-**Overall:** 🟢 OK — no notification sent.
-
-**Files updated:** `docs/status.md` (regenerated), `memory/logs/2026-06-29.md` (log appended).
-
-HEARTBEAT_OK · STATUS_PAGE=OK
+- **docs/status.md** — regenerated with 2026-06-30 08:00 UTC timestamp, 🟢 OK overall
+- **memory/logs/2026-06-30.md** — new log entry created with this run's findings
+- No issues to report across P0–P3 checks
