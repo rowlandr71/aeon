@@ -1,9 +1,8 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-All checks passed, no flags raised. `docs/status.md` updated (🟢 OK, heartbeat 97% success rate, next run 14:00 UTC) and today's log written to `memory/logs/2026-06-30.md`. No notification sent.
-
 ## Summary
 
-- **docs/status.md** — regenerated with 2026-06-30 08:00 UTC timestamp, 🟢 OK overall
-- **memory/logs/2026-06-30.md** — new log entry created with this run's findings
-- No issues to report across P0–P3 checks
+- **P0–P3:** All clear. No failed, stuck, or chronically failing skills. Heartbeat self-check healthy (last success 4.5h ago). No stalled PRs, urgent issues, or flagged memory items. Only `heartbeat` is enabled and running on schedule.
+- **docs/status.md:** Updated — overall 🟢 OK, next run 20:00 UTC.
+- **memory/logs/2026-06-30.md:** Log entry appended for the 14:00 UTC run.
+- **Notification:** Skipped — no new flags to report.
