@@ -1,9 +1,25 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
-
-All checks clear. `docs/status.md` updated to 2026-07-05 14:00 UTC with next run at 20:00 UTC. No notifications sent — fleet is green.
+All checks complete. Here's the summary:
 
 ## Summary
 
-- **P0/P1/P2/P3:** All clear. No failed, stuck, or chronically-failing skills. No stalled PRs, urgent issues, or flagged memory items. Only `heartbeat` is enabled; last success well within the 2× interval threshold.
-- **Files modified:** `docs/status.md` (status page updated), `memory/logs/2026-07-05.md` (14:00 UTC run appended).
-- **No notification sent** — identical to the last 48h of runs; dedup check passed.
+**Run time:** 2026-07-05 20:00 UTC
+
+**P0 — Failed/stuck skills:** None. All three skills in cron-state.json show `last_status: success`. Heartbeat self-check OK (last success 14:05 UTC, ~6h ago). config-validator (25% rate, 4 runs) and hn-digest (50% rate, 2 runs) are below the 5-run chronic-failure threshold — not flagged.
+
+**P1 — PRs/issues:** No open PRs, no urgent issues.
+
+**P2 — Memory flags:** Nothing flagged.
+
+**P3 — Missing scheduled skills:** Only `heartbeat` is enabled; last success ~6h ago vs 16h threshold — OK.
+
+**Token pulse:** No `articles/token-report-*.md` files — section omitted from status page.
+
+**Overall:** 🟢 OK
+
+**Files updated:**
+- `docs/status.md` — regenerated with 20:00 UTC timestamp, next run 2026-07-06 08:00 UTC
+- `memory/logs/2026-07-05.md` — appended 20:00 UTC run entry
+
+**Notification:** Skipped — no new flags; all findings identical to prior runs in last 48h.
+
+HEARTBEAT_OK · STATUS_PAGE=OK
