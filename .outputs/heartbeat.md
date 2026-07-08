@@ -1,12 +1,13 @@
-All done. HEARTBEAT_OK · STATUS_PAGE=OK
+HEARTBEAT_OK · STATUS_PAGE=OK
 
 ## Summary
 
-- **P0:** Clean — no failed/stuck/degraded skills. `heartbeat` at 98% success rate (58/59 runs). `config-validator` (25% rate, 4 runs) and `hn-digest` (50%, 2 runs) remain below the 5-run chronic-failure threshold — not flagged.
+All checks passed — no flags at any priority tier.
+
+- **P0:** No failed, stuck, or API-degraded skills. Heartbeat self-check OK (last success ~11h ago, well under 36h threshold). `config-validator` (25% rate) and `hn-digest` (50% rate) remain below the 5-run chronic threshold.
 - **P1:** No open PRs, no urgent issues.
 - **P2:** No flagged memory items.
-- **P3:** Only `heartbeat` is enabled; last success minutes ago, well within the 12h threshold.
+- **P3:** Only `heartbeat` is enabled; last success within the 12h window.
 - **Token pulse:** No `articles/token-report-*.md` files — section omitted.
-- **Overall:** 🟢 OK — no notification sent (nothing new since prior runs).
-- **docs/status.md** updated (timestamp 2026-07-07 15:13 UTC, next run 20:00 UTC).
-- **memory/logs/2026-07-07.md** appended.
+
+**Files updated:** `docs/status.md` (🟢 OK, next run 14:00 UTC), `memory/logs/2026-07-08.md` (new).
