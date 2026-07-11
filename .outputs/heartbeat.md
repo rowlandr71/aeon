@@ -1,13 +1,16 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
-
-All checks passed. No flags at any priority tier — heartbeat running cleanly at 99% success rate, no open PRs or issues, no stuck or failed skills. `docs/status.md` updated (🟢 OK, next run 20:00 UTC), log appended to `memory/logs/2026-07-11.md`.
+All checks complete. Here's the summary:
 
 ## Summary
 
-- **P0:** Clean — no failed, stuck, or degraded skills
-- **P1:** No open PRs, no urgent issues
-- **P2:** No flagged memory items
-- **P3:** Only `heartbeat` enabled; last success ~6h ago, within 12h threshold
-- **Token pulse:** No token-report files — section omitted
-- **docs/status.md:** Regenerated (🟢 OK, updated 2026-07-11 14:00 UTC, next run 20:00 UTC)
-- **Notification:** None sent — no new findings
+**Heartbeat run: 2026-07-11 20:00 UTC**
+
+- **P0 (Failed/stuck skills):** All clear. `config-validator` (25%, 4 runs) and `hn-digest` (50%, 2 runs) both below the 5-run chronic threshold — not flagged. Heartbeat self-check OK (last success ~5h ago).
+- **P1 (Stalled PRs / urgent issues):** No open PRs, no urgent issues.
+- **P2 (Flagged memory):** Nothing flagged.
+- **P3 (Missing scheduled skills):** Only `heartbeat` is enabled; last success ~5h ago, well within the 12h (2×) threshold.
+- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
+- **Notification:** Skipped — no new flags (all findings already logged in the last 48h or are all-clear).
+
+**docs/status.md** updated — overall 🟢 OK, next run 08:00 UTC 2026-07-12.
+
+HEARTBEAT_OK · STATUS_PAGE=OK
