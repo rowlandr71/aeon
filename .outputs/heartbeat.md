@@ -1,16 +1,9 @@
-All checks complete. Here's the summary:
-
-## Summary
-
-**Heartbeat run: 2026-07-11 20:00 UTC**
-
-- **P0 (Failed/stuck skills):** All clear. `config-validator` (25%, 4 runs) and `hn-digest` (50%, 2 runs) both below the 5-run chronic threshold — not flagged. Heartbeat self-check OK (last success ~5h ago).
-- **P1 (Stalled PRs / urgent issues):** No open PRs, no urgent issues.
-- **P2 (Flagged memory):** Nothing flagged.
-- **P3 (Missing scheduled skills):** Only `heartbeat` is enabled; last success ~5h ago, well within the 12h (2×) threshold.
-- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
-- **Notification:** Skipped — no new flags (all findings already logged in the last 48h or are all-clear).
-
-**docs/status.md** updated — overall 🟢 OK, next run 08:00 UTC 2026-07-12.
-
 HEARTBEAT_OK · STATUS_PAGE=OK
+
+All checks passed:
+- **P0:** No failed, stuck, or chronically failing skills. Heartbeat self-check OK (last success ~11.5h ago, within 36h threshold).
+- **P1:** No open PRs, no urgent issues.
+- **P2:** No flagged memory items.
+- **P3:** Only `heartbeat` is enabled; last success within the 12h (2× interval) threshold.
+
+`docs/status.md` updated — 🟢 OK, next run at 14:00 UTC. No notification sent (nothing new to flag).
