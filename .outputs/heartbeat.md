@@ -1,8 +1,3 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-## Summary
-
-- All P0–P3 checks clear: no failed/stuck skills, no stalled PRs, no urgent issues, no flagged memory items, no overdue scheduled skills
-- `docs/status.md` updated: 🟢 OK, next run 20:00 UTC
-- Log entry appended to `memory/logs/2026-07-21.md`
-- Notification skipped — no new findings since last run
+**Summary:** All checks clear — no failed/stuck skills, no stalled PRs, no urgent issues, no flagged memory items. Heartbeat self-check healthy (last success ~4.75h ago). `docs/status.md` updated to 🟢 OK with next run at 08:00 UTC 2026-07-22. Log appended. No notification sent.
