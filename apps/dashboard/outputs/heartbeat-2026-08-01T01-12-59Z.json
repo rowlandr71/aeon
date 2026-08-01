@@ -1,0 +1,149 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat Health",
+        "description": "🔴 DEGRADED — heartbeat has been failing for ~9 days"
+      },
+      "children": [
+        "stack_issues",
+        "sep1",
+        "stack_error"
+      ]
+    },
+    "stack_issues": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_failed",
+        "alert_api",
+        "stat_consecutive",
+        "stack_chronic",
+        "stack_selfcheck"
+      ]
+    },
+    "alert_failed": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 FAILED",
+        "message": "heartbeat failed 2026-07-31 23:33 UTC (~1.6h ago)",
+        "type": "error"
+      }
+    },
+    "alert_api": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 API DEGRADATION",
+        "message": "heartbeat — last_error shows 0 tokens used (gateway/billing issue suspected)",
+        "type": "error"
+      }
+    },
+    "stat_consecutive": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures",
+        "value": "113",
+        "trend": "down"
+      }
+    },
+    "stack_chronic": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "progress_success",
+        "badge_chronic"
+      ]
+    },
+    "progress_success": {
+      "type": "Progress",
+      "props": {
+        "value": 48,
+        "max": 100,
+        "label": "Success Rate over 220 runs (below 50% threshold)"
+      }
+    },
+    "badge_chronic": {
+      "type": "Badge",
+      "props": {
+        "text": "🔴 CHRONIC",
+        "variant": "destructive"
+      }
+    },
+    "stack_selfcheck": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_lastcheck",
+        "badge_selfcheck"
+      ]
+    },
+    "stat_lastcheck": {
+      "type": "Stat",
+      "props": {
+        "label": "Last Success: 2026-07-23 14:19 UTC",
+        "value": "9.4 days ago",
+        "delta": "threshold: 36h",
+        "trend": "down"
+      }
+    },
+    "badge_selfcheck": {
+      "type": "Badge",
+      "props": {
+        "text": "🔴 SELF-CHECK",
+        "variant": "destructive"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_error": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_error",
+        "text_signature",
+        "alert_diagnostic"
+      ]
+    },
+    "heading_error": {
+      "type": "Heading",
+      "props": {
+        "text": "Last Error Signature",
+        "level": "h3"
+      }
+    },
+    "text_signature": {
+      "type": "Text",
+      "props": {
+        "text": "input_tokens=0, output_tokens=0 — suggests Claude gateway is returning empty/failed responses",
+        "variant": "body"
+      }
+    },
+    "alert_diagnostic": {
+      "type": "Alert",
+      "props": {
+        "title": "Diagnostic Action Required",
+        "message": "Check ANTHROPIC_API_KEY / gateway configuration and billing status",
+        "type": "warning"
+      }
+    }
+  }
+}

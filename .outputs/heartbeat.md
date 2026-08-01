@@ -1,13 +1,8 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
+🔴 DEGRADED — heartbeat has been failing for ~9 days
 
-All checks passed — nothing to flag. `docs/status.md` updated to 🟢 OK, timestamped 2026-07-23 10:00 UTC, next scheduled heartbeat at 14:00 UTC.
+🔴 FAILED: heartbeat (failed 2026-07-31 23:33 UTC, ~1.6h ago)
+🔴 API DEGRADATION: heartbeat — 113 consecutive failures; last_error shows 0 tokens used (gateway/billing issue suspected)
+🔴 CHRONIC: heartbeat — 48% success rate over 220 runs (below 50% threshold)
+🔴 SELF-CHECK: heartbeat last_success 2026-07-23 14:19 UTC (~9.4 days ago; threshold: 36h)
 
-## Summary
-
-- **P0:** No failed, stuck, or consecutively-failing skills. Heartbeat self-check OK (last success 09:58 UTC today, well under 36h).
-- **P1:** No open PRs, no urgent issues.
-- **P2:** No flagged memory items.
-- **P3:** Only `heartbeat` is enabled with a cron schedule; it ran successfully today.
-- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
-- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-07-23.md` (log entry appended).
-- **Notification:** skipped — no new flags.
+Last error signature: input_tokens=0, output_tokens=0 — suggests Claude gateway is returning empty/failed responses. Check ANTHROPIC_API_KEY / gateway configuration and billing status.
