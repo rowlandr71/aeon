@@ -1,9 +1,11 @@
 HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
-## Summary
+**Summary:**
 
-- **P0:** Heartbeat chronic failure flag persists (`success_rate: 0.49`, 224 runs). No failed/stuck skills, no consecutive failures, self-check OK (last success ~11.4h ago).
-- **P1–P3:** No open PRs, urgent issues, flagged memory items, or missing skills.
-- **Notification:** Suppressed — chronic-failure already notified 2026-08-01 01:11 UTC (within 48h dedup window).
-- **docs/status.md:** Regenerated — 🔴 DEGRADED, updated to 2026-08-02 08:00 UTC, next run 14:00 UTC.
-- **memory/logs/2026-08-02.md:** Created with this run's log entry.
+- **P0:** Heartbeat chronic failure persists (49% success rate, 225 runs). Notification suppressed — already sent 2026-08-01 01:11 UTC, dedup active until 2026-08-03 01:11 UTC. Self-check OK (last success 09:30 UTC today, well within 36h threshold).
+- **P1:** No open PRs, no urgent issues.
+- **P2:** No flagged memory items.
+- **P3:** Only heartbeat is enabled; last success 4.5h ago, within 2× 6h schedule interval.
+- **Token pulse:** No token-report files — section omitted.
+- **docs/status.md** updated: overall 🔴 DEGRADED, next run 20:00 UTC.
+- **memory/logs/2026-08-02.md** appended with this run's entry.
