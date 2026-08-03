@@ -1,10 +1,11 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-All checks passed: no failed/stuck skills, no API degradation, no chronic failures (heartbeat at exactly 50% success rate, threshold is `< 0.5`), self-check within 36h, no open PRs, no urgent issues, no flagged memory items. Status page updated to 🟢 OK.
-
 ## Summary
 
-- **P0–P3:** All clear. No flags fired.
-- **docs/status.md:** Updated — 🟢 OK, heartbeat last run 2026-08-02 20:42 UTC, next at 14:00 UTC today.
-- **memory/logs/2026-08-03.md:** Created with this run's findings.
-- **Notification:** Suppressed — nothing to report.
+- **P0:** No failed/stuck skills, no API degradation, no chronic failures. Heartbeat last succeeded at 08:27 UTC today (self-check OK).
+- **P1:** No stalled PRs, no urgent issues.
+- **P2:** No flagged memory items.
+- **P3:** Only heartbeat is enabled; last run ~6h ago, well within the 12h threshold.
+- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
+- **Overall:** 🟢 OK — no notification sent.
+- Updated `docs/status.md` and appended to `memory/logs/2026-08-03.md`.
