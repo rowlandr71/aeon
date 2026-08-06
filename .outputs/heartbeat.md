@@ -1,11 +1,12 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-All checks passed cleanly for the 20:00 UTC run:
+All checks passed — no failed skills, no stuck runs, no stalled PRs or urgent issues, no flagged memory items, and heartbeat's last success (~10.6h ago) is well within all thresholds. `docs/status.md` updated for the 08:00 UTC run; next scheduled heartbeat at 14:00 UTC.
 
-- **P0:** No failed/stuck skills, no API degradation. `config-validator` has `success_rate=0.25` but only 4 runs (chronic threshold requires ≥5). `heartbeat` self-check OK — last success ~5h ago, well within 36h.
-- **P1:** No open PRs, no urgent issues.
-- **P2:** No flagged memory items.
-- **P3:** Only `heartbeat` is enabled; last success 5h ago, within 2× the 6h interval.
-- **Token pulse:** No `token-report-*.md` files — section omitted.
+## Summary
 
-`docs/status.md` updated (🟢 OK, next run 2026-08-06 08:00 UTC) and log appended to `memory/logs/2026-08-05.md`.
+- **P0:** Clean — no failed/stuck skills, no API degradation, no chronic failures (config-validator has 4 runs, below the 5-run threshold), heartbeat self-check OK
+- **P1:** No open PRs, no urgent issues
+- **P2:** No new flagged memory items
+- **P3:** Only heartbeat is enabled; last success within 2× interval
+- **docs/status.md:** Regenerated — 🟢 OK, heartbeat 52% success rate, 0 consecutive failures
+- **memory/logs/2026-08-06.md:** Created with this run's log entry
