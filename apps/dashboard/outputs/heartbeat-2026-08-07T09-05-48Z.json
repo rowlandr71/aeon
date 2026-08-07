@@ -1,0 +1,47 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert-watch",
+        "stack-details"
+      ]
+    },
+    "alert-watch": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 WATCH",
+        "type": "warning"
+      }
+    },
+    "stack-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge-p3",
+        "text-message"
+      ]
+    },
+    "badge-p3": {
+      "type": "Badge",
+      "props": {
+        "text": "🔵 P3",
+        "variant": "secondary"
+      }
+    },
+    "text-message": {
+      "type": "Text",
+      "props": {
+        "text": "Last recorded success was 2026-08-06 14:40 UTC (~17h ago), exceeding the 2× 6h interval threshold (12h). The 20:00 UTC run on 2026-08-06 appears missing from cron-state.json. Agent is running now (08:00 UTC run). No other issues."
+      }
+    }
+  }
+}

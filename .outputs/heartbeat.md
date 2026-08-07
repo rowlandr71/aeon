@@ -1,3 +1,2 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
-
-All checks passed. No flags across P0–P3. `docs/status.md` updated to reflect the 14:00 UTC run; next scheduled heartbeat is at 20:00 UTC today.
+🟡 WATCH
+🔵 P3 — heartbeat: last recorded success was 2026-08-06 14:40 UTC (~17h ago), exceeding the 2× 6h interval threshold (12h). The 20:00 UTC run on 2026-08-06 appears missing from cron-state.json. Agent is running now (08:00 UTC run). No other issues.
