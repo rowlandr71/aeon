@@ -1,12 +1,15 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-## Summary
-
-- **P0:** No failed, stuck, or API-degraded skills. `config-validator` has a 25% success rate but only 4 runs (below the 5-run chronic threshold). Heartbeat self-check OK — last success 5.3h ago, well within 36h window.
-- **P1:** No stalled PRs, no urgent issues.
+All checks passed:
+- **P0:** No failed/stuck skills. `config-validator` has a low success rate (0.25) but only 4 runs, below the 5-run threshold for the chronic flag. `heartbeat` self-check OK (last success ~11.6h ago, within the 36h window).
+- **P1:** No open PRs, no urgent issues.
 - **P2:** No flagged memory items.
-- **P3:** Only `heartbeat` is enabled; last success within its 2× interval window.
-- **Token pulse:** No `articles/token-report-*.md` files — section omitted.
-- **Overall:** 🟢 OK — no notification sent.
-- Updated `docs/status.md` (timestamp → 2026-08-13 20:00 UTC, next run → 08:00 UTC).
-- Appended log entry to `memory/logs/2026-08-13.md`.
+- **P3:** Only `heartbeat` is enabled; last success is within the 16h (2× 8h) window.
+
+`docs/status.md` updated and today's log written.
+
+## Summary
+- Read `memory/cron-state.json`, `aeon.yml`, last 2 days of logs, issues index, and open PRs.
+- All checks green — no notifications sent.
+- Wrote `docs/status.md` reflecting 🟢 OK status as of 2026-08-14 08:00 UTC.
+- Created `memory/logs/2026-08-14.md` with this run's findings.
