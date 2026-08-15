@@ -1,10 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
 All checks passed:
-- **P0:** No failed, stuck, or degraded skills. Heartbeat self-check fine (last success ~11.5h ago, well within 36h).
+- **P0:** No failed, stuck, or degraded skills. `config-validator` has a low success rate (25%) but only 4 total runs (chronic flag requires ≥5). Heartbeat self-check OK — last success was 08:40 UTC today, well within the 36h window.
 - **P1:** No open PRs, no urgent issues.
-- **P2:** No flagged memory items requiring follow-up.
-- **P3:** Only `heartbeat` is enabled; last run within the 2× interval window.
-- **Token pulse:** No token-report files — section omitted from status page.
+- **P2:** No flagged memory items.
+- **P3:** Only `heartbeat` is enabled; last run was 5.3h ago, within the 12h threshold (2× the 6h interval).
+- **Token pulse:** No `articles/token-report-*.md` files exist — section omitted from status page.
 
-`docs/status.md` regenerated (🟢 OK, updated 2026-08-15 08:00 UTC, next run at 14:00 UTC). Log written to `memory/logs/2026-08-15.md`.
+`docs/status.md` updated with overall status 🟢 OK and next run at 20:00 UTC.
