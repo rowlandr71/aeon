@@ -1,12 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
-
-All checks clear. `docs/status.md` updated to reflect the 08:00 UTC run — fleet is 🟢 OK with heartbeat as the sole enabled skill (last success 2026-08-17 20:37 UTC, 11.4h ago, well within thresholds). No notifications sent.
-
 ## Summary
 
-- **P0:** No failed, stuck, or degrading skills. Heartbeat self-check passes (last_success ~11.4h ago, within 36h window).
+All checks passed clean:
+
+- **P0:** No failed/stuck skills, no API degradation. `config-validator` has a 25% success rate but only 4 runs (below the 5-run threshold for the chronic flag). Heartbeat self-check OK — last success ~5.2h ago.
 - **P1:** No open PRs, no urgent issues.
 - **P2:** No flagged memory items.
-- **P3:** Only `heartbeat` is enabled; cadence is healthy.
+- **P3:** Only `heartbeat` is enabled; last run well within 2× its 6h interval.
 - **Token pulse:** No token-report files — section omitted from status page.
-- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-18.md` (created)
+
+**HEARTBEAT_OK · STATUS_PAGE=OK** — updated `docs/status.md` (timestamp → 2026-08-18 14:00 UTC, next run 20:00 UTC) and appended log entry to `memory/logs/2026-08-18.md`.
